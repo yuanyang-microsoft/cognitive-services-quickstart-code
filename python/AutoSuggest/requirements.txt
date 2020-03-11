@@ -1,0 +1,1 @@
+azure-cognitiveservices-search-autosuggest==0.1.0

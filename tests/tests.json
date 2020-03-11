@@ -1,0 +1,42 @@
+[
+  {
+    "ignore": true,
+    "runtime": "dotnet",
+    "path": "/dotnet/BingAutoSuggest",
+    "entry": "quickstart.csproj",
+    "parameters": [
+      {
+        "name": "AUTOSUGGEST_SUBSCRIPTION_KEY",
+        "keyVaultUrl": "https://devexp-kv.vault.azure.net",
+        "keyVaultSecret": "SampleCodeTests-AutoSuggestSubscriptionKey"
+      },
+      {
+        "name": "AUTOSUGGEST_ENDPOINT",
+        "value": "https://api.cognitive.microsoft.com"
+      }
+    ],
+    "inputs": [
+      ""
+    ]
+  },
+  {
+    "ignore": false,
+    "runtime": "python",
+    "path": "python/AutoSuggest",
+    "entry": "Quickstart.py",
+    "parameters": [
+      {
+        "name": "AUTOSUGGEST_SUBSCRIPTION_KEY",
+        "keyVaultUrl": "https://devexp-kv.vault.azure.net",
+        "keyVaultSecret": "SampleCodeTests-AutoSuggestSubscriptionKey"
+      },
+      {
+        "name": "AUTOSUGGEST_ENDPOINT",
+        "value": "https://api.cognitive.microsoft.com"
+      }
+    ],
+    "inputs": [
+      ""
+    ]
+  }
+]
