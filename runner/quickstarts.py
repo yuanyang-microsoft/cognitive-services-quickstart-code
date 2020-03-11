@@ -1,6 +1,6 @@
 import subprocess
 import sys
-from .environments import Environments
+from environments import Environments
 
 
 class QuickStart:

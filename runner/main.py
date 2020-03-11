@@ -1,5 +1,5 @@
 import os
-from .quickstarts import JavascriptQuickStart, PythonQuickStart, JavaQuickStart, DotnetQuickStart
+from quickstarts import JavascriptQuickStart, PythonQuickStart, JavaQuickStart, DotnetQuickStart
 
 
 def get_quickstarts_by_beacons(base_path, beacon):
