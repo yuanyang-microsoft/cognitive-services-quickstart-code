@@ -1,0 +1,58 @@
+[
+  {
+    "ignore": true,
+    "runtime": "dotnet",
+    "path": "/dotnet/BingAutoSuggest",
+    "entry": "quickstart.csproj",
+    "parameters": [
+      {
+        "name": "AUTOSUGGEST_SUBSCRIPTION_KEY",
+        "keyVaultUrl": "https://devexp-kv.vault.azure.net",
+        "keyVaultSecret": "SampleCodeTests-AutoSuggestSubscriptionKey"
+      },
+      {
+        "name": "AUTOSUGGEST_ENDPOINT",
+        "value": "https://api.cognitive.microsoft.com"
+      }
+    ],
+    "contacts": [
+      "alias@microsoft.com"
+    ]
+  },
+  {
+    "ignore": true,
+    "runtime": "python",
+    "path": "python/AutoSuggest",
+    "entry": "Quickstart.py",
+    "parameters": [
+      {
+        "name": "AUTOSUGGEST_SUBSCRIPTION_KEY",
+        "keyVaultUrl": "https://devexp-kv.vault.azure.net",
+        "keyVaultSecret": "SampleCodeTests-AutoSuggestSubscriptionKey"
+      },
+      {
+        "name": "AUTOSUGGEST_ENDPOINT",
+        "value": "https://api.cognitive.microsoft.com"
+      }
+    ],
+    "contacts": [
+      "alias@microsoft.com"
+    ]
+  },
+  {
+    "ignore": false,
+    "runtime": "python",
+    "path": "python/BingSpellCheck",
+    "entry": "bing_spell_check_quickstart.py",
+    "parameters": [
+      {
+        "name": "BING_SPELL_CHECK_SUBSCRIPTION_KEY",
+        "keyVaultUrl": "https://devexp-kv.vault.azure.net",
+        "keyVaultSecret": "SampleCodeTests-SpellCheckSubscriptionKey"
+      }
+    ],
+    "contacts": [
+      "alias@microsoft.com"
+    ]
+  }
+]
