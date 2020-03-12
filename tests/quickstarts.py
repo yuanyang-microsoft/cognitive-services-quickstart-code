@@ -20,8 +20,7 @@ class QuickStart:
             if 'value' in parameter:
                 _value = parameter['value']
             elif 'keyVaultUrl' in parameter and 'keyVaultSecret' in parameter:
-
-                credential = ClientSecretCredential('72f988bf-86f1-41af-91ab-2d7cd011db47', '594f2bef-5021-4317-8e5c-f3f1e1117565', '4DgcaJLKmjQjrOv@QEY/M8@h.kSjHj84')
+                credential = ClientSecretCredential('72f988bf-86f1-41af-91ab-2d7cd011db47', '594f2bef-5021-4317-8e5c-f3f1e1117565', os.environ.get('CsdxClientSecret'))
                 client = SecretClient(vault_url=parameter['keyVaultUrl'], credential=credential)
                 _value = client.get_secret(parameter['keyVaultSecret']).value
             else:
@@ -66,7 +65,7 @@ class QuickStart:
     def _run_shell(self, args):
         _out = subprocess.Popen(args,
                                 env=self.env,
-                                shell=True,
+                                shell=False,
                                 cwd=self.root_path,
                                 stdout=subprocess.PIPE,
                                 stderr=subprocess.PIPE)
