@@ -1,4 +1,5 @@
 import os
+import sys
 from quickstarts import JavascriptQuickStart, PythonQuickStart, JavaQuickStart, DotnetQuickStart
 
 
@@ -55,6 +56,7 @@ def get_quickstarts():
 
 
 if __name__ == "__main__":
+    os.environ['CSDX_CLIENT_SECRET'] = sys.argv[1]
 
     for quick_start in get_quickstarts():
         print(quick_start.root_path, quick_start.entry, quick_start.ignore)
